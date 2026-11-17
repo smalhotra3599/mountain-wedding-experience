@@ -128,7 +128,7 @@ export function TellUsYourPlans() {
                 className={`${primaryButton} w-full sm:w-auto`}
                 disabled={busy !== null}
               >
-                {busy ? "Finding your invitation…" : "Find my invitation"}
+                {busy ? "Finding you…" : "Find me"}
               </button>
               {busy && (
                 <p className="font-serif text-sm text-muted-foreground">

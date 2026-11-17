@@ -49,7 +49,7 @@ export const faqCategories: FaqCategory[] = [
         "The welcome party, wedding ceremony, cocktail hour, and reception are planned for our invited wedding guests.",
         "The rehearsal dinner is a smaller gathering reserved for immediate family, the wedding party, and those involved in the ceremony.",
         "Details about the farewell brunch will be confirmed closer to the wedding.",
-        "Your formal invitation will specify the celebrations you’re invited to attend.",
+        "When you look yourself up in Tell Us Your Plans, you’ll see the celebrations you’re invited to attend.",
       ]},
       { q: "Will there be any Indian wedding ceremonies?", a: [
         "No, we won’t be having any traditional Indian wedding ceremonies.",
@@ -95,8 +95,8 @@ export const faqCategories: FaqCategory[] = [
         "Formal RSVP details will follow.",
       ]},
       { q: "Can we bring additional guests?", a: [
-        "Invitations will be personalized and will specify exactly who is invited.",
-        "We kindly ask that guests follow the names listed on their invitations, as we’re planning our celebrations around a specific guest count.",
+        "When you look yourself up in Tell Us Your Plans, you’ll see exactly who is included in your party.",
+        "We kindly ask that you keep to the guests listed there, as we’re planning our celebrations around a specific guest count.",
         "If you have any questions, please reach out to us directly.",
       ]},
       { q: "Who is organizing the wedding, and whom should we contact with questions?", a: [
