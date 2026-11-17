@@ -138,7 +138,7 @@ export function TellUsYourPlans() {
               {step.name === "pick" && (
                 <div className="space-y-3 pt-4">
                   <p className="font-serif text-base text-foreground">
-                    We found a few invitations. Which one is yours?
+                    We found a few matches. Which one is you?
                   </p>
                   {step.matches.map((m) => (
                     <button
@@ -341,7 +341,7 @@ function Thanks({ party, onEdit }: { party: Party; onEdit: () => void }) {
       <div>
         <p className="font-script text-4xl text-romantic-crimson md:text-5xl">Thank you!</p>
         <p className="mt-4 font-serif text-base text-foreground md:text-lg">
-          We’ve got your plans, {party.party}. Formal invitations and RSVP details will follow.
+          We’ve got your plans, {party.party}. We’ll let you know when it’s time to send your final RSVP.
         </p>
       </div>
       {rsvpEvents(party).map(({ event, guests }) => (

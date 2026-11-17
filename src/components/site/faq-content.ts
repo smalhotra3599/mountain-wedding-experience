@@ -67,10 +67,10 @@ export const faqCategories: FaqCategory[] = [
     id: "invitations",
     label: "Invitations & RSVPs",
     items: [
-      { q: "Is this our formal wedding invitation?", a: [
-        "Not quite!",
-        "This website is currently serving as our save-the-date and an early resource to help you begin planning your trip.",
-        "Formal invitations, event timings, dress codes, and additional details will follow.",
+      { q: "Is this our wedding invitation?", a: [
+        "Yes!",
+        "This website is our invitation. We won’t be sending paper invitations.",
+        "Event timings, dress codes, and additional details will be added here as the wedding gets closer, and we’ll let you know when there’s an update.",
       ]},
       { q: "Why are you sending save-the-dates so far in advance?", a: [
         "We’re bringing together friends and family from across the United States and around the world, and we want everyone to have plenty of time to plan.",
@@ -82,17 +82,17 @@ export const faqCategories: FaqCategory[] = [
         "No!",
         "We’re simply gathering an early sense of everyone’s plans to help us prepare.",
         "Your response at this stage is not your final RSVP.",
-        "Formal invitations and RSVP instructions will follow.",
+        "We’ll let you know when it’s time to send your final RSVP, which you’ll do right here on the website.",
       ]},
       { q: "When do we need to confirm our attendance?", a: [
-        "The official RSVP deadline will be shared with your formal invitation.",
+        "We’ll share the official RSVP deadline here on the website and let you know when it’s time to respond.",
         "For now, we’d appreciate an early indication of whether you’re considering joining us.",
       ]},
       { q: "Can we change our response later?", a: [
         "Of course!",
         "We understand that plans can change, especially when coordinating travel so far in advance.",
         "Your early response is simply helping us with preliminary planning.",
-        "Formal RSVP details will follow.",
+        "We’ll let you know when it’s time to send your final RSVP.",
       ]},
       { q: "Can we bring additional guests?", a: [
         "When you look yourself up in Tell Us Your Plans, you’ll see exactly who is included in your party.",
@@ -208,7 +208,7 @@ export const faqCategories: FaqCategory[] = [
     items: [
       { q: "What should we wear to the wedding celebrations?", a: [
         "We’re planning a mix of formal and relaxed celebrations throughout the three days.",
-        "Each event will have its own dress code, and we’ll share specific attire guidance with your formal invitation.",
+        "Each event will have its own dress code, and we’ll share specific attire guidance here on the website closer to the wedding.",
         "Because we’ll be celebrating in the mountains during October, we also recommend keeping the cooler weather in mind.",
       ]},
       { q: "Will the wedding ceremony take place outdoors?", a: [
