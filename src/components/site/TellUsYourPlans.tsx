@@ -45,7 +45,7 @@ export function TellUsYourPlans() {
       const { matches, party } = await weddingApi.lookup(query);
       if (party) return showParty(party);
       if (matches.length === 0)
-        setError("We couldn’t find you. Try your full name as it appears on your invitation.");
+        setError("We couldn’t find you. Try entering your full first and last name.");
       else setStep({ name: "pick", matches });
     } catch (err) {
       setError(`${errorText(err)} ${CONTACT_US}`);
@@ -111,7 +111,7 @@ export function TellUsYourPlans() {
           {step.name === "find" || step.name === "pick" ? (
             <form onSubmit={find} className="space-y-4" noValidate>
               <label htmlFor="plans-name" className="eyebrow block font-bold text-rust">
-                Your name, as it appears on your invitation
+                Your full name
               </label>
               <input
                 id="plans-name"
