@@ -155,8 +155,8 @@ describe("tell us your plans page", () => {
     vi.stubGlobal("fetch", fetchMock);
     render(<TellUsYourPlans />);
 
-    fireEvent.change(screen.getByLabelText(/your name/i), { target: { value: "Asha Rao" } });
-    fireEvent.click(screen.getByRole("button", { name: /find my invitation/i }));
+    fireEvent.change(screen.getByLabelText(/your full name/i), { target: { value: "Asha Rao" } });
+    fireEvent.click(screen.getByRole("button", { name: /find me/i }));
 
     await screen.findByText(/Welcome,/);
     // One round trip: the lookup returns the party when exactly one matches.

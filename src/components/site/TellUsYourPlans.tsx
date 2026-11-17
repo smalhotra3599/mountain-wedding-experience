@@ -45,7 +45,7 @@ export function TellUsYourPlans() {
       const { matches, party } = await weddingApi.lookup(query);
       if (party) return showParty(party);
       if (matches.length === 0)
-        setError("We couldn’t find you. Try your full name as it appears on your invitation.");
+        setError("We couldn’t find you. Try entering your full first and last name.");
       else setStep({ name: "pick", matches });
     } catch (err) {
       setError(`${errorText(err)} ${CONTACT_US}`);
@@ -111,7 +111,7 @@ export function TellUsYourPlans() {
           {step.name === "find" || step.name === "pick" ? (
             <form onSubmit={find} className="space-y-4" noValidate>
               <label htmlFor="plans-name" className="eyebrow block font-bold text-rust">
-                Your name, as it appears on your invitation
+                Your full name
               </label>
               <input
                 id="plans-name"
@@ -128,7 +128,7 @@ export function TellUsYourPlans() {
                 className={`${primaryButton} w-full sm:w-auto`}
                 disabled={busy !== null}
               >
-                {busy ? "Finding your invitation…" : "Find my invitation"}
+                {busy ? "Finding you…" : "Find me"}
               </button>
               {busy && (
                 <p className="font-serif text-sm text-muted-foreground">
@@ -138,7 +138,7 @@ export function TellUsYourPlans() {
               {step.name === "pick" && (
                 <div className="space-y-3 pt-4">
                   <p className="font-serif text-base text-foreground">
-                    We found a few invitations. Which one is yours?
+                    We found a few matches. Which one is you?
                   </p>
                   {step.matches.map((m) => (
                     <button
@@ -341,7 +341,7 @@ function Thanks({ party, onEdit }: { party: Party; onEdit: () => void }) {
       <div>
         <p className="font-script text-4xl text-romantic-crimson md:text-5xl">Thank you!</p>
         <p className="mt-4 font-serif text-base text-foreground md:text-lg">
-          We’ve got your plans, {party.party}. Formal invitations and RSVP details will follow.
+          We’ve got your plans, {party.party}. We’ll let you know when it’s time to send your final RSVP.
         </p>
       </div>
       {rsvpEvents(party).map(({ event, guests }) => (
